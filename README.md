@@ -3,6 +3,8 @@
 A collection of sortable tables listing and comparing the summary statistics of
 simulated LSST surveys.
 
+You can click on any column heading to order the entire table based on that column.
+
 Each table will include the summary statistics from `minion_1016_newsky`.
 
 The final set of columns in each table with have a name with the following
@@ -18,6 +20,25 @@ absolute value of the percentage change in a summary statistic relative to
 
 > `%_colossus_2328 = abs([(26.402 - 26.509)/26.402]*100) = 0.403`
 
+## OpSimV3 vs OpSimV4
+
+A comparison of an OpsimV4 run (`colossus_2371`) with all of the new features
+turned off to the previous LSST baseline (`minion_1016_newsky`) created
+using OpsimV3.
+
+`colossus_2371` had the following fetures turned off or set to zero:
+
+- airmass bonus
+- hour angle bonus
+- time balancing
+- restric group visits
+
+Additionally, these tables also contains `astro-lsst-01_2013` which also had
+an HA bonus = 0.5, but and HA max = 3.
+
+ - [Science Metrics](https://oboberg.github.io//opsim_comparisons/v3_v4/science_metrics/index.html)
+
+ - [Scheduler Metrics](https://oboberg.github.io/opsim_comparisons/v3_v4/scheduler_metrics/index.html)
 
 
 ## Varying Hour Angle Bonus
@@ -30,7 +51,7 @@ The runs are as follows:
  - `colossus_2399`: HA bonus = 0.50
  - `colossus_2378`: HA bonus = 0.80
 
-Additionally, this table also contains `astro-lsst-01_2013` which also had
+Additionally, these tables also contains `astro-lsst-01_2013` which also had
 an HA bonus = 0.5, but and HA max = 3.
 
 Clink the links below to get to the various comparison tables.
