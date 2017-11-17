@@ -60,7 +60,8 @@ Clink the links below to get to the various comparison tables.
 
  - [Scheduler Metrics](https://oboberg.github.io/opsim_comparisons/hour_anlgle_bonus/scheduler_metrics/index.html)
 
- ## Varying HA max
+
+## Varying HA max
 
  Here we compare 10 year simulations where the maximum Hour angle was varied.
  > Note: For the deep drilling fields HA max is still set to 6.
