@@ -59,3 +59,20 @@ Clink the links below to get to the various comparison tables.
  - [Science Metrics](https://oboberg.github.io/opsim_comparisons/hour_anlgle_bonus/science_metrics/index.html)
 
  - [Scheduler Metrics](https://oboberg.github.io/opsim_comparisons/hour_anlgle_bonus/scheduler_metrics/index.html)
+
+ ## Varying HA max
+
+ Here we compare 10 year simulations where the maximum Hour angle was varied.
+ > Note: For the deep drilling fields HA max is still set to 6.
+
+ The runs are as follows:
+  - `colossus_2414`: HA max = 2, HA bonus = 0.05
+  - `astro-lsst-01_2013`: HA max = 3, HA bonus = 0.50
+  - `colossus_2421`: HA max = 4, HA bonus = 0.50
+  - `colossus_2399`: HA max = 6, HA bonus = 0.50
+
+ Clink the links below to get to the various comparison tables.
+
+  - [Science Metrics](https://oboberg.github.io/opsim_comparisons/hamax/science_metrics/index.html)
+
+  - [Scheduler Metrics](https://oboberg.github.io/opsim_comparisons/hamax/scheduler_metrics/index.html)
