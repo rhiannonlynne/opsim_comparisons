@@ -4,4 +4,4 @@ A collection of sortable tables comparing the summary statistics of simulated LS
 
 ## Varying Hour Angle Bonus
 
- - [Science Metrics](https://oboberg.github.io/opsim_comparisons/hour_anlgle_bonus/science_metrics/)
+ - [Science Metrics](https://oboberg.github.io/opsim_comparisons/hour_anlgle_bonus/science_metrics/index.html)
