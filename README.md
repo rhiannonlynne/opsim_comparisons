@@ -22,19 +22,21 @@ absolute value of the percentage change in a summary statistic relative to
 
 ## OpSimV3 vs OpSimV4
 
-A comparison of an OpsimV4 run (`colossus_2371`) with all of the new features
+A comparison of an OpsimV4 run (`astro-lsst-01_2020`) with all of the new features
 turned off to the previous LSST baseline (`minion_1016_newsky`) created
 using OpsimV3.
 
-`colossus_2371` had the following fetures turned off or set to zero:
+`astro-lsst-01_2020` had the following features turned off or set to zero:
 
 - airmass bonus
 - hour angle bonus
 - time balancing
-- restric group visits
+- restrict group visits
 
 Additionally, these tables also contains `astro-lsst-01_2013` which also had
 an HA bonus = 0.5, but and HA max = 3.
+
+ - [Critical Metrics](https://oboberg.github.io//opsim_comparisons/v3_v4/critical_metrics/index.html)
 
  - [Science Metrics](https://oboberg.github.io//opsim_comparisons/v3_v4/science_metrics/index.html)
 
@@ -75,6 +77,8 @@ Clink the links below to get to the various comparison tables.
   - `colossus_2399`: HA max = 6, HA bonus = 0.50
 
  Clink the links below to get to the various comparison tables.
+
+  - [Critical Metrics](https://oboberg.github.io/opsim_comparisons/hamax/critical_metrics/index.html)
 
   - [Science Metrics](https://oboberg.github.io/opsim_comparisons/hamax/science_metrics/index.html)
 
