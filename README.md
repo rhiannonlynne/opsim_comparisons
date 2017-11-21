@@ -33,9 +33,6 @@ using OpsimV3.
 - time balancing
 - restrict group visits
 
-Additionally, these tables also contains `astro-lsst-01_2013` which also had
-an HA bonus = 0.5, but and HA max = 3.
-
  - [Critical Metrics](https://oboberg.github.io//opsim_comparisons/v3_v4/critical_metrics/index.html)
 
  - [Science Metrics](https://oboberg.github.io//opsim_comparisons/v3_v4/science_metrics/index.html)
