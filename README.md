@@ -33,6 +33,8 @@ using OpsimV3.
 - time balancing
 - restrict group visits
 
+Clink the links below to get to the various comparison tables.
+
  - [Critical Metrics](https://oboberg.github.io//opsim_comparisons/v3_v4/critical_metrics/index.html)
 
  - [Science Metrics](https://oboberg.github.io//opsim_comparisons/v3_v4/science_metrics/index.html)
