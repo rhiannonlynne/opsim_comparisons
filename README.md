@@ -56,6 +56,8 @@ an HA bonus = 0.5, but and HA max = 3.
 
 Clink the links below to get to the various comparison tables.
 
+ - [Critical Metrics](https://oboberg.github.io/opsim_comparisons/hour_anlgle_bonus/critical_metrics/index.html)
+
  - [Science Metrics](https://oboberg.github.io/opsim_comparisons/hour_anlgle_bonus/science_metrics/index.html)
 
  - [Scheduler Metrics](https://oboberg.github.io/opsim_comparisons/hour_anlgle_bonus/scheduler_metrics/index.html)
