@@ -74,6 +74,8 @@ generateCompHtml.py minion_1016_newsky --outDirs sci sched --comboHtml sci_sched
 stro-lsst-01_2020  --show_page --combine --filter
 ```
 
+## Example comparisons available  here
+
 There are currently 3 tables for each set of runs.
 
  - Critical metrics (a sample of SRD and astronomer's eye metrics)
