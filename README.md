@@ -42,7 +42,7 @@ directory there are subdirectories for different set of metrics.
 >Example  
 astro-lsst-01_2020/sci/resultsDb_sqlite.db  
 astro-lsst-01_2020/sched/resultsDb_sqlite.db  
-minion_1016_new_sky/sci/resultsDb_sqlite.db
+minion_1016_new_sky/sci/resultsDb_sqlite.db 
 minion_1016_new_sky/sched/resultsDb_sqlite.db
 
 #### Example 1:
