@@ -1,7 +1,78 @@
-# Side-by-side comparisons summary statistics
+# [Side-by-side comparisons summary statistics](https://oboberg.github.io/opsim_comparisons/)
 
 A collection of sortable tables listing and comparing the summary statistics of
 simulated LSST surveys.
+
+In the the `bin` directory there is a script called  `generateCompHtml.py` that
+can generate html tables similar to those linked below. Here I will show an
+examples of how this script may be used from the command line.
+
+This script does not require any of the LSST software, but you will need to
+install the python packages [pandas](http://pandas.pydata.org/pandas-docs/stable/install.html) and
+[bokeh](https://bokeh.pydata.org/en/latest/docs/installation.html).
+
+Here are the options available to the script through the command line:
+
+```
+Create an interactive HTML table comparing the MAF summary statistics of a
+list of runs.
+
+positional arguments:
+  baselineRun           Baseline survey for comparison
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --outDirs OUTDIRS [OUTDIRS ...]
+                        Subdirectory containing MAF results database
+  --htmlOut HTMLOUT [HTMLOUT ...]
+                        Name of resulting html file.
+  --runlist RUNLIST [RUNLIST ...]
+                        Runs for comparisons separated by space
+  --show_page           Automatically open html table in browser.
+  --combine             Combine multiple subdirs into single html page.
+  --comboHtml COMBOHTML
+                        Name of resulting combined html file.
+  --filter              Filter the summary stats to only included critical
+                        values.
+```
+
+The script assumes that each run has its own directory, and within the run
+directory there are subdirectories for different set of metrics.
+
+>Example  
+astro-lsst-01_2020/sci/resultsDb_sqlite.db  
+astro-lsst-01_2020/sched/resultsDb_sqlite.db  
+minion_1016_new_sky/sci/resultsDb_sqlite.db
+minion_1016_new_sky/sched/resultsDb_sqlite.db
+
+#### Example 1:
+Generate two html tables comparing the `sci` and `sched` results for `astro-lsst-01_2020`
+and `minion_1016_new_sky`. One will be called `sci.html` and the other will be `sched.html`.
+
+```
+generateCompHtml.py minion_1016_newsky --outDirs sched sci --htmlOut sci.html sched.html --runlist
+astro-lsst-01_2020  --show_page
+
+```
+#### Example 2:
+Generate a html file compring the sci and sched results for astro-lsst-01_2020
+and minion_1016_new_sky in a single html table.
+
+```
+generateCompHtml.py minion_1016_newsky --outDirs sci sched --comboHtml sci_sched_combo.html --runlist
+astro-lsst-01_2020  --show_page --combine
+```
+>Note: See that only one html file is give when the `--comboHtml` flag is used.
+
+
+#### Example 3:
+Generate a html file compring the sci and sched results for astro-lsst-01_2020
+and minion_1016_new_sky in a single html table and only include critical metrics.
+
+```
+generateCompHtml.py minion_1016_newsky --outDirs sci sched --comboHtml sci_sched_combo.html --runlist
+stro-lsst-01_2020  --show_page --combine --filter
+```
 
 There are currently 3 tables for each set of runs.
 
