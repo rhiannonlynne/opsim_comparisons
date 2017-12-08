@@ -169,3 +169,22 @@ Clink the links below to get to the various comparison tables.
   - [Science Metrics](https://oboberg.github.io/opsim_comparisons/hamax/science_metrics/index.html)
 
   - [Scheduler Metrics](https://oboberg.github.io/opsim_comparisons/hamax/scheduler_metrics/index.html)
+
+
+## Varying Max Altitude
+
+ Here we compare 10 year simulations where the maximum altitude angle was varied.
+ 
+
+ The runs are as follows:
+  - `minion-1016`:  maxalt = 86.5
+  - `astro-lsst-01_2013`: maxalt = 86.5
+  - `astro-lsst-01-2019`: maxalt = 80.
+
+Clink the links below to get to the various comparison tables.
+
+  - [Critical Metrics](https://oboberg.github.io/opsim_comparisons/MaxAlt/critical_metrics/index.html)
+
+  - [Science Metrics](https://oboberg.github.io/opsim_comparisons/MaxAlt/science_metrics/index.html)
+
+  - [Scheduler Metrics](https://oboberg.github.io/opsim_comparisons/MaxAlt/scheduler_metrics/index.html)
