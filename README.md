@@ -174,7 +174,6 @@ Clink the links below to get to the various comparison tables.
 ## Varying Max Altitude
 
  Here we compare 10 year simulations where the maximum altitude angle was varied.
- 
 
  The runs are as follows:
   - `minion-1016`:  maxalt = 86.5
@@ -188,3 +187,14 @@ Clink the links below to get to the various comparison tables.
   - [Science Metrics](https://oboberg.github.io/opsim_comparisons/MaxAlt/science_metrics/index.html)
 
   - [Scheduler Metrics](https://oboberg.github.io/opsim_comparisons/MaxAlt/scheduler_metrics/index.html)
+
+
+## Comparing minion_1016 to an [alternative scheduler](http://altsched.rothchild.me:8080/?runId=5)
+
+The results from the alternative scheulder are the work of Daniel Rothchild.
+
+- [Cadence Metrics](https://oboberg.github.io/opsim_comparisons/alt/cadence/index.html)
+
+- [Scheduler Metrics](https://oboberg.github.io/opsim_comparisons/alt/sched/index.html)
+
+- [Science Metrics](https://oboberg.github.io/opsim_comparisons/alt/sci/index.html)

@@ -12,7 +12,6 @@ from bokeh.layouts import widgetbox, layout, row, column
 from bokeh.models import ColumnDataSource
 from bokeh.models.widgets import DataTable, DateFormatter, TableColumn, NumberFormatter, Select
 from bokeh.plotting import Figure, output_file, show
-from bokeh.plotting import figure
 
 def summaryDiffReport(baselineRun, outDir, runlist, percent_threshold = None):
     """
@@ -283,6 +282,7 @@ def parseArgs():
     parser.add_argument("--comboHtml", default = None ,type=str, help="Name of resulting combined html file.")
     parser.add_argument('--filter', dest='filter', action='store_true',
                         default=False, help="Filter the summary stats to only included critical values.")
+    parser.add_argument('--savedf', default = None, type=str, help="Name of csv file to save dataframe")
 
     args = parser.parse_args()
     return args
@@ -304,3 +304,5 @@ if __name__ == '__main__':
     else:
         combine_df = pd.concat(df_list, ignore_index =True)
         generateDiffHtml(combine_df, args.comboHtml, show_page = args.show_page)
+        if args.savedf is not None:
+            combine_df.to_csv(args.savedf, index = False)
