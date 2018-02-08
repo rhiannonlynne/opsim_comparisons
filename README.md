@@ -202,3 +202,4 @@ The results from the alternative scheulder are the work of Daniel Rothchild.
 ## New [baselines](http://astro-lsst-01.astro.washington.edu:8081/)
 
 - [SRD](https://oboberg.github.io/opsim_comparisons/newbaselines/SRD/index.html)
+- [All](https://oboberg.github.io/opsim_comparisons/newbaselines/all/index.html)
