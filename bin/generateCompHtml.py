@@ -214,11 +214,11 @@ def generateDiffHtml(dataframe, html_out, show_page = False):
     data_table = DataTable(source=source, columns=columns, width=1700, height=2000)
 
     combined_callback_code = """
-    var data = source.get('data');
-    var original_data = original_source.get('data');
-    var metricName = metricName_select_obj.get('value');
-    var metricMetadata = metricMetadata_select_obj.get('value');
-    var summaryName = summaryName_select_obj.get('value');
+    var data = source.data;
+    var original_data = original_source.data;
+    var metricName = metricName_select_obj.value;
+    var metricMetadata = metricMetadata_select_obj.value;
+    var summaryName = summaryName_select_obj.value;
 
      for (var key in original_data) {
          data[key] = [];
@@ -230,8 +230,8 @@ def generateDiffHtml(dataframe, html_out, show_page = False):
              }
          }
      }
-    source.trigger('change')
-    target_obj.trigger('change');
+    source.change.emit();
+    target_obj.change.emit();
     """
 
     metricName_list = ['ALL'] + dataframe['metricName'].unique().tolist()
